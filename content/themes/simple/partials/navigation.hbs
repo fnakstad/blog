@@ -1,0 +1,54 @@
+{{!--<div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        {{#foreach navigation}}
+            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>
+    <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>--}}
+
+<header class="site-header main-header">
+    {{!--#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if--}}
+    <h1>
+        {{!--<ruby>Frederik<rt>フレデリック</rt></ruby> 
+        <ruby>&nbsp;<rt>・</rt></ruby> 
+        <ruby>Nakstad<rt>ナクスター</rt></ruby>--}}
+
+        <ruby>Frederik Nakstad<rt>フレデリック・ナクスター</rt></ruby>
+    </h1>
+    <hr />
+    <nav class="menu">
+
+        <ul class="nav">
+            {{#foreach navigation}}
+                <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}">
+                    <a href="{{url absolute="true"}}">
+                        <span data-hover="{{label}}">{{label}}</span>
+                    </a>
+                </li>
+                
+                {{!--<li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>--}}
+            {{/foreach}}
+            {{!--<li class="active">
+                <a href='#'>
+                    <span data-hover="Blog">Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href='#'>
+                    <span data-hover="About">About</span>
+                </a>
+            </li>
+            <li>
+                <a href='#'>
+                    <span data-hover="Projects">Projects</span>
+                </a>
+            </li>--}}
+        </ul>
+    </nav>
+</header>
