@@ -13,12 +13,11 @@
 <span class="nav-cover"></span>--}}
 
 <header class="site-header main-header">
-    {{!--#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if--}}
     <h1>
         {{!--<ruby>Frederik<rt>フレデリック</rt></ruby> 
         <ruby>&nbsp;<rt>・</rt></ruby> 
         <ruby>Nakstad<rt>ナクスター</rt></ruby>--}}
-
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         <ruby>Frederik Nakstad<rt>フレデリック・ナクスター</rt></ruby>
     </h1>
     <hr />
@@ -36,7 +35,7 @@
             {{/foreach}}
             {{!--<li class="active">
                 <a href='#'>
-                    <span data-hover="Blog">Blog</span>
+                    <span data-hover="blog">Blog</span>
                 </a>
             </li>
             <li>

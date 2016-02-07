@@ -6,18 +6,29 @@ header.site-header.main-header {
     color: #555;
 }
 
+header.site-header.main-header .blog-logo {
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    position: relative;
+    bottom: -10px;
+}
+
 header.site-header.main-header .blog-logo img {
-    width: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 header.site-header.main-header h1 {
     text-align: center;
     margin-bottom: 5px;
     font-family: 'Amaranth', sans-serif;
+    color: #555;
 }
 
 header.site-header.main-header h1 ruby > rt {
     font-size: 0.35em;
+    color: #555;
 }
 
 header.site-header.main-header hr {
@@ -123,30 +134,45 @@ body {
     }
 }
 
+.img-social {
+    display: inline-block;
+}
+
 ul.social-links {
     list-style-type: none;
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    padding: 0;
+    display: inline-block;
+    padding-left: 1em;
+    margin-top: 24px;
 }
 
 ul.social-links li {
     /*display: inline;*/
-    padding: 0.2em;
+    /*padding: 0.2em;*/
     margin: 0;
+    height: 1.9em;
 }
 
 ul.social-links li a {
     text-decoration: none;
-    font-size: 2em;
-    color: #aaa;
+    font-size: 1.4em;
+    color: #777;
     /*display: inline-block;*/
+}
+
+ul.social-links li a .fa.fa-envelope {
+    font-size: 0.8em;
 }
 
 ul.social-links li a:hover {
     color: #00AAFF;
+}
+
+ul.social-links li a:hover .fa {
     animation: color 1s ease-in, spin 1s;
+}
+
+ul.social-links li a .acc-name {
+    font-size: 0.6em;
 }
 
 @media only screen and (max-width: 500px) {
