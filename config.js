@@ -59,7 +59,7 @@ config = {
         // Ghost supports sqlite3 (default), MySQL & PostgreSQL
         database: {
             client: 'postgres',
-            connection: 'postgres://fnakstad:m8PJea6tdE1W-br7@127.0.0.1:5432/blog',
+            connection: process.env.BLOG_DB_URL,
             debug: false
         },
         // #### Server
