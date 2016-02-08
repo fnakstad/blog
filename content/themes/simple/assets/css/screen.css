@@ -7,8 +7,8 @@ header.site-header.main-header {
 }
 
 header.site-header.main-header .blog-logo {
-    height: 70px;
-    width: 70px;
+    height: 85px;
+    width: 85px;
     display: inline-block;
     position: relative;
     bottom: -10px;
@@ -127,13 +127,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-@media only screen and (max-width: 500px) {
-    nav.menu ul li a {
-        font-size: 0.8em;
-        height: 1.8em;
-    }
-}
-
 .img-social {
     display: inline-block;
 }
@@ -175,24 +168,37 @@ ul.social-links li a .acc-name {
     font-size: 0.6em;
 }
 
+@media only screen and (max-width: 900px) {
+    header.site-header.main-header .blog-logo {
+        height: 70px;
+        width: 70px;
+    }
+}
+
 @media only screen and (max-width: 500px) {
+    nav.menu ul li a {
+        font-size: 0.8em;
+        height: 1.8em;
+    }
+
+    header.site-header.main-header .blog-logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    ul.social-links {
+        margin-top: 0;
+    }
 
     ul.social-links li {
-        /*position: static;*/
-        padding: 0 0.2em;
+        height: 1.3em;
     }
 
     ul.social-links li a {
-        font-size: 1.5em;
+        font-size: 1.2em;
         /*display: inline;*/
     }
 }
-
-img.school-img {
-    max-width: 65px;
-}
-
-
 
 
 /* ==========================================================================
