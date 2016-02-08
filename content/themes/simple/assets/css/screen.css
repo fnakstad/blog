@@ -72,13 +72,11 @@ nav.menu ul li {
 }
 
 nav.menu ul li:nth-child(n+2):before {
-    content: '';
+    content: '·';
     margin: 0 4px 0 2px;
-    font-size: 20px;
+    font-size: 24px;
     position: relative;
-    top: -7px;
     color: #00AAFF;
-    font: normal normal normal 8px/1 FontAwesome;
 }
 
 nav.menu ul li a {
